@@ -36,7 +36,7 @@ function Main() {
 
 
   return (
-        <div className={` ${weatherCondition} w-[700px] min-h-[450px] h-[450px] overflow-hidden flex justify-center items-center mv-main`}>
+        <div className={` ${weatherCondition} w-[700px] min-h-[450px] h-[450px] overflow-hidden flex justify-center items-center bg-slate-700 mv-main`}>
             <div className='text-white w-[600px] h-[350px] p-4 flex flex-col justify-around items-center mv-main-text'>
               <div>
                 <p className='text-9xl flex mt-3 mv-main-temp'>{weatherData.temp_c}<span className='text-7xl'>&deg;</span></p>

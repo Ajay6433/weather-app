@@ -73,7 +73,7 @@ code {
   background-position: center;
   background-size: cover;
 }
-.patchy-rain-nearby-, .moderate-rain- , .heavy-rain-{
+.patchy-rain-nearby-, .moderate-rain- , .heavy-rain- , .moderate-or-heavy-rain-with-thunder{
   background: url('./assets/img/RainBg.gif');
   background-position: center;
   background-size: cover;

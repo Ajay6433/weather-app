@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.dark{
+  background-color: #252525;
+  color: #e6e6e6;
+}
+*{
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Toggle button CSS */
+.toggle-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  height: 45px;
+  width: 90px;
+  border-radius: 26px;
+  border: 1px solid black;
+  overflow: hidden;
+  background-color: white;
+}
+.toggle-button{
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  background: yellow;
+}
+.on{
+  left: 45px;
+  background-color: #a4a4a4;
+}
+.mode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main weather component background CSS */
+.rain-shower , .light-rain-shower-, .light-drizzle- , .mist{
+  background: url('./assets/img/RainShowerBg.gif');
+  background-position: center;
+  background-size: cover;
+}
+.sunny- , .clear-{
+  background: url('./assets/img/SunnyBg.gif');
+  background-position: center;
+  background-size: cover;
+}
+.cloudy- , .partly-cloudy-{
+  background: url('./assets/img/PartlyCloudyBg.gif');
+  background-position: center;
+  background-size: cover;
+}
+.patchy-rain-nearby-, .moderate-rain- , .heavy-rain-{
+  background: url('./assets/img/RainBg.gif');
+  background-position: center;
+  background-size: cover;
+}
+.overcast-{
+  background: url('./assets/img/OvercastBg.gif');
+  background-position: center;
+  background-size: cover;
+}
+.thundery-outbreaks-in-nearby-{
+  background: url('./assets/img/StormyBg.gif');
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+/* Mobile responsive code starts from here  */
+
+@media screen and (max-width: 480px) {
+  .mv-app{
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+  }
+  .mv-header{
+    width: 100vw;
+  }
+  .mv-date{
+    display: none;
+  }
+  .mv-toggle-container{
+    height: 35px;
+    width: 65px;
+  }
+  .mv-toggle-button{
+    height: 31px;
+    width: 31px;
+  }
+  .on{
+    left: 30px;
+  }
+
+  .mv-main{
+    width: 100vw;
+    overflow: hidden;
+  }
+  .mv-weekdays{
+    width: 100vw;
+    margin-top: 15px;
+  }
+  .mv-main-text{
+    padding: 1px;
+    width: 95%;
+    height: 280px;
+  }
+  .mv-main-temp{
+    font-size: 7rem;
+  }
+}

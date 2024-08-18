@@ -29,7 +29,7 @@ function Main() {
    if( item.time === currentTime)
    {
     const txt = item.condition.text.toLowerCase().replace(/ /g, '-');
-    console.log(txt);
+    // console.log(txt);
     setWeatherCondition(txt);
    }
   });

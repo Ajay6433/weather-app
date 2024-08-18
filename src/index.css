@@ -58,32 +58,32 @@ code {
 }
 
 /* Main weather component background CSS */
-.rain-shower , .light-rain-shower-, .light-drizzle- , .mist{
+.rain-shower ,.rain-shower- , .light-rain-shower- , .light-rain-shower, .light-drizzle- ,.light-drizzle , .mist , .mist-{
   background: url('./assets/img/RainShowerBg.gif');
   background-position: center;
   background-size: cover;
 }
-.sunny- , .clear-{
+.sunny- , .sunny, .clear- ,.clear{
   background: url('./assets/img/SunnyBg.gif');
   background-position: center;
   background-size: cover;
 }
-.cloudy- , .partly-cloudy-{
+.cloudy- , .cloudy , .partly-cloudy- , .partly-cloudy{
   background: url('./assets/img/PartlyCloudyBg.gif');
   background-position: center;
   background-size: cover;
 }
-.patchy-rain-nearby-, .moderate-rain- , .heavy-rain- , .moderate-or-heavy-rain-with-thunder{
+.patchy-rain-nearby- , .patchy-rain-nearby, .moderate-rain- .moderate-rain , .heavy-rain- , .heavy-rain, .moderate-or-heavy-rain-with-thunder{
   background: url('./assets/img/RainBg.gif');
   background-position: center;
   background-size: cover;
 }
-.overcast-{
+.overcast- .overcast{
   background: url('./assets/img/OvercastBg.gif');
   background-position: center;
   background-size: cover;
 }
-.thundery-outbreaks-in-nearby-{
+.thundery-outbreaks-in-nearby- , .thundery-outbreaks-in-nearby{
   background: url('./assets/img/StormyBg.gif');
   background-position: center;
   background-size: cover;
@@ -93,7 +93,7 @@ code {
 
 
 
-/* Mobile responsive code starts from here  */
+/* Mobile responsive code starts from here || MV is for mobile view */
 
 @media screen and (max-width: 480px) {
   .mv-app{
